@@ -1,0 +1,48 @@
+.signal-demo {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.info-box {
+  background-color: #e6f7ff;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #1890ff;
+}
+
+.actions {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #40a9ff;
+}
+
+.explanation {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}

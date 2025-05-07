@@ -3,48 +3,29 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, RouterLink],
   template: `
-    <div class="container">
-      <h1>Hello World!</h1>
-      <p>Welcome to {{ title }}</p>
-      <nav>
-        <a routerLink="/">Home</a> |
-        <a routerLink="/signal">Signal</a>
-      </nav>
-      <router-outlet />
+    <div class="app-container">
+      <header>
+        <h1>Angular Features Demo</h1>
+        <nav>
+          <a routerLink="/component" routerLinkActive="active">Component Demo</a>
+          <a routerLink="/signal" routerLinkActive="active">Signal Demo</a>
+        </nav>
+      </header>
+
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+
+      <footer>
+        <p>Angular v19.2.0 Features Demonstration</p>
+      </footer>
     </div>
   `,
-  styles: [
-    `
-      .container {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-      }
-
-      h1 {
-        color: #3f51b5;
-      }
-
-      nav {
-        margin: 20px 0;
-      }
-
-      a {
-        color: #3f51b5;
-        margin: 0 10px;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    `,
-  ],
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-patterns-app';
+  title = 'Angular Features Demo';
 }
